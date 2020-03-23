@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "PPP",
+      "P P",
+      "P P"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:prismarine_shard"
+      }
+    },
+    "result": {
+      "item": "projectr:prismarine_leggings",
+      "count": 1
+    }
+  }
+

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "M M",
+      "MMM",
+      "MMM"
+    ],
+    "key": {
+      "M": {
+        "item": "projectr:magma_shard"
+      }
+    },
+    "result": {
+      "item": "projectr:magma_chestplate",
+      "count": 1
+    }
+  }

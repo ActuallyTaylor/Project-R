@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.ProjectR.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "ExampleMixin",
+    "TickHook",
+    "LocateCommandMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

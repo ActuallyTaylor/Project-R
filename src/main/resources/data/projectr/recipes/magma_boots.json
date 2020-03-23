@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "M M",
+      "M M"
+    ],
+    "key": {
+      "M": {
+        "item": "projectr:magma_shard"
+      }
+    },
+    "result": {
+      "item": "projectr:magma_boots",
+      "count": 1
+    }
+  }
+

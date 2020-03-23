@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "MMM",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "M": {
+        "item": "projectr:magma_shard"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "projectr:magma_pickaxe",
+      "count": 1
+    }
+  }
+
