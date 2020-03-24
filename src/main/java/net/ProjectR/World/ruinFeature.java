@@ -1,9 +1,6 @@
 package net.ProjectR.World;
 
 import java.util.Random;
-import java.util.function.Function;
-
-import com.mojang.datafixers.Dynamic;
 
 import net.ProjectR.Registration.StructureReg;
 import net.minecraft.structure.StructureManager;
@@ -45,24 +42,24 @@ public class ruinFeature extends AbstractTempleFeature<DefaultFeatureConfig> {
     }
 
     @Override
-    public boolean shouldStartAt(BiomeAccess biomeAccess, ChunkGenerator<?> chunkGenerator, Random random, int chunkX,
-            int chunkZ, Biome biome) {
+    public boolean shouldStartAt(final BiomeAccess biomeAccess, final ChunkGenerator<?> chunkGenerator, final Random random, final int chunkX,
+            final int chunkZ, final Biome biome) {
         return true;
     }
 
     public static class ruinStructureStart extends StructureStart {
-        public ruinStructureStart(StructureFeature<?> sFeature, int i, int j,BlockBox blockbox, int k, long l) {
+        public ruinStructureStart(final StructureFeature<?> sFeature, final int i, final int j,final BlockBox blockbox, final int k, final long l) {
             super(sFeature, i, j, blockbox, k, l);
         }
 
         @Override
-        public void initialize(ChunkGenerator<?> chunkGenerator, StructureManager structureManager, int x, int z,
-                Biome biome) {
-            DefaultFeatureConfig defaultFeatureConfig = chunkGenerator.getStructureConfig(biome, StructureReg.ruinFeature);//Add Feature
-            int x2 = x * 16;
-            int z2 = z * 16;
-            BlockPos startingPos = new BlockPos(x2, 0, z2);
-            BlockRotation rotation = BlockRotation.values()[this.random.nextInt(BlockRotation.values().length)];
+        public void initialize(final ChunkGenerator<?> chunkGenerator, final StructureManager structureManager, final int x, final int z,
+                final Biome biome) {
+            final DefaultFeatureConfig defaultFeatureConfig = chunkGenerator.getStructureConfig(biome, StructureReg.ruinFeature);//Add Feature
+            final int x2 = x * 16;
+            final int z2 = z * 16;
+            final BlockPos startingPos = new BlockPos(x2, 0, z2);
+            final BlockRotation rotation = BlockRotation.values()[this.random.nextInt(BlockRotation.values().length)];
             ruinGenerator.addParts(structureManager, startingPos, rotation, this.children, this.random,
                     defaultFeatureConfig);
             this.setBoundingBoxFromChildren();
