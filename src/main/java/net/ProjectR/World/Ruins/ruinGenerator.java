@@ -1,4 +1,4 @@
-package net.ProjectR.World;
+package net.ProjectR.World.Ruins;
 
 import java.util.Random;
 import java.util.List;
