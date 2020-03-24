@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "W W",
+      "WWW",
+      "WWW"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:acacia_log"
+      }
+    },
+    "result": {
+      "item": "projectr:acacia_chestplate",
+      "count": 1
+    }
+  }

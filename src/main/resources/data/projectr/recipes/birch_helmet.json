@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "WWW",
+      "W W"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:birch_log"
+      }
+    },
+    "result": {
+      "item": "projectr:birch_helmet",
+      "count": 1
+    }
+  }
+

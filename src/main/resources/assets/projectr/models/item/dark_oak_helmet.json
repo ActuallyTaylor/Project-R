@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+      "layer0": "projectr:item/dark_oak_helmet"
+    }
+}

@@ -18,6 +18,36 @@
     "item.projectr.magma_axe": "Magma Axe",
     "item.projectr.magma_shovel": "Magma Shovel",
     "item.projectr.magma_hoe": "Magma Hoe",
-    "item.projectr.magma_shard": "Magma Shard"
+    "item.projectr.magma_shard": "Magma Shard",
+
+    "item.projectr.oak_helmet": "Oak Helmet",
+    "item.projectr.oak_chestplate": "Oak Chestplate",
+    "item.projectr.oak_leggings": "Oak Leggings",
+    "item.projectr.oak_boots": "Oak Boots",
+
+    "item.projectr.spruce_helmet": "Spruce Helmet",
+    "item.projectr.spruce_chestplate": "Spruce Chestplate",
+    "item.projectr.spruce_leggings": "Spruce Leggings",
+    "item.projectr.spruce_boots": "Spruce Boots",
+
+    "item.projectr.acacia_helmet": "Acacia Helmet",
+    "item.projectr.acacia_chestplate": "Acacia Chestplate",
+    "item.projectr.acacia_leggings": "Acacia Leggings",
+    "item.projectr.acacia_boots": "Acacia Boots",
+
+    "item.projectr.dark_oak_helmet": "Dark Oak Helmet",
+    "item.projectr.dark_oak_chestplate": "Dark Oak Chestplate",
+    "item.projectr.dark_oak_leggings": "Dark Oak Leggings",
+    "item.projectr.dark_oak_boots": "Dark Oak Boots",
+
+    "item.projectr.birch_helmet": "Birch Helmet",
+    "item.projectr.birch_chestplate": "Birch Chestplate",
+    "item.projectr.birch_leggings": "Birch Leggings",
+    "item.projectr.birch_boots": "Birch Boots",
+
+    "item.projectr.jungle_helmet": "Jungle Helmet",
+    "item.projectr.jungle_chestplate": "Jungle Chestplate",
+    "item.projectr.jungle_leggings": "Jungle Leggings",
+    "item.projectr.jungle_boots": "Jungle Boots"
   }
 

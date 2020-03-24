@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "WWW",
+      "W W"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:acacia_log"
+      }
+    },
+    "result": {
+      "item": "projectr:acacia_helmet",
+      "count": 1
+    }
+  }
+
