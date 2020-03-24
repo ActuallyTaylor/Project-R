@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.biomes.v1.OverworldClimate;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 
 public class BiomeReg {
 
@@ -15,6 +16,7 @@ public class BiomeReg {
     public static void register() {
         OverworldBiomes.addContinentalBiome(INFECTED_BIOME, OverworldClimate.TEMPERATE, 0.7);
         OverworldBiomes.addContinentalBiome(INFECTED_BIOME, OverworldClimate.COOL, 0.7);
+        OverworldBiomes.addHillsBiome(INFECTED_BIOME, Biomes.MOUNTAINS, 1);
         FabricBiomes.addSpawnBiome(INFECTED_BIOME);
     }
 } 
