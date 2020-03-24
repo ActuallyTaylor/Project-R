@@ -1,7 +1,7 @@
 package net.ProjectR.Registration;
 
-import net.ProjectR.World.ruinFeature;
-import net.ProjectR.World.ruinGenerator;
+import net.ProjectR.World.Ruins.ruinFeature;
+import net.ProjectR.World.Ruins.ruinGenerator;
 import net.minecraft.structure.StructurePieceType;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -26,11 +26,11 @@ public class StructureReg {
 
 		for(Biome biome : Registry.BIOME)
 		{
-			if(biome.getCategory() == Biome.Category.DESERT || biome.getCategory() == Biome.Category.EXTREME_HILLS || biome.getCategory() == Biome.Category.FOREST || biome.getCategory() == Biome.Category.JUNGLE || biome.getCategory() == Biome.Category.PLAINS || biome.getCategory() == Biome.Category.SAVANNA || biome.getCategory() == Biome.Category.TAIGA)
+			if(biome.getCategory() == Biome.Category.DESERT || biome.getCategory() == Biome.Category.EXTREME_HILLS || biome.getCategory() == Biome.Category.FOREST || biome.getCategory() == Biome.Category.JUNGLE || biome.getCategory() == Biome.Category.PLAINS || biome.getCategory() == Biome.Category.SAVANNA || biome.getCategory() == Biome.Category.TAIGA || biome.getCategory() == Biome.Category.MUSHROOM)
 			{
 				biome.addStructureFeature(ruinFeature.configure(FeatureConfig.DEFAULT));
                 biome.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES, ruinFeature.configure(FeatureConfig.DEFAULT).createDecoratedFeature(Decorator.CHANCE_PASSTHROUGH.configure(new ChanceDecoratorConfig(25))));
-            }
+            } 
 		}
     }
 }

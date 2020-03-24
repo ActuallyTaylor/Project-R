@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.ProjectR.LootTables.NetherMobs;
 import net.ProjectR.Registration.ArmorReg;
+import net.ProjectR.Registration.BiomeReg;
 import net.ProjectR.Registration.BlockReg;
 import net.ProjectR.Registration.ItemReg;
 import net.ProjectR.Registration.StructureReg;
@@ -30,5 +31,8 @@ public class ProjectR implements ModInitializer {
         
         //Load Structures
         StructureReg.register();
+
+        //Load Biomes
+        BiomeReg.register();
     }
 }

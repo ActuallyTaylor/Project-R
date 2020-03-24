@@ -48,6 +48,8 @@
     "item.projectr.jungle_helmet": "Jungle Helmet",
     "item.projectr.jungle_chestplate": "Jungle Chestplate",
     "item.projectr.jungle_leggings": "Jungle Leggings",
-    "item.projectr.jungle_boots": "Jungle Boots"
+    "item.projectr.jungle_boots": "Jungle Boots",
+    
+    "biome.projectr.infected_biome": "Infected"
   }
 
