@@ -26,11 +26,10 @@ public class StructureReg {
 
 		for(Biome biome : Registry.BIOME)
 		{
-			if(biome.getCategory() != Biome.Category.OCEAN && biome.getCategory() != Biome.Category.RIVER)
+			if(biome.getCategory() == Biome.Category.DESERT || biome.getCategory() == Biome.Category.EXTREME_HILLS || biome.getCategory() == Biome.Category.FOREST || biome.getCategory() == Biome.Category.JUNGLE || biome.getCategory() == Biome.Category.PLAINS || biome.getCategory() == Biome.Category.SAVANNA || biome.getCategory() == Biome.Category.TAIGA)
 			{
 				biome.addStructureFeature(ruinFeature.configure(FeatureConfig.DEFAULT));
-                biome.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES, ruinFeature.configure(FeatureConfig.DEFAULT).createDecoratedFeature(Decorator.CHANCE_PASSTHROUGH.configure(new ChanceDecoratorConfig(19))));
-
+                biome.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES, ruinFeature.configure(FeatureConfig.DEFAULT).createDecoratedFeature(Decorator.CHANCE_PASSTHROUGH.configure(new ChanceDecoratorConfig(25))));
             }
 		}
     }

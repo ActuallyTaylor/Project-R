@@ -33,13 +33,13 @@ public class ruinGenerator {
             List<StructurePiece> pieces, Random random, DefaultFeatureConfig defaultConfig) {
         int rand = (int) ((Math.random() * (6 - 0)) + 0);
         if(rand == 0) {
-            pieces.add(new ruinGenerator.Piece(manager, RUIN_1_TEMPLATE, pos, rotation, 2));
+            pieces.add(new ruinGenerator.Piece(manager, RUIN_1_TEMPLATE, pos, rotation, 0));
         } else if (rand == 1) {
             pieces.add(new ruinGenerator.Piece(manager, RUIN_2_TEMPLATE, pos, rotation, 0));
         } else if (rand == 2) {
             pieces.add(new ruinGenerator.Piece(manager, RUIN_3_TEMPLATE, pos, rotation, 0));
         } else if (rand == 3) {
-            pieces.add(new ruinGenerator.Piece(manager, RUIN_4_TEMPLATE, pos, rotation, 1));
+            pieces.add(new ruinGenerator.Piece(manager, RUIN_4_TEMPLATE, pos, rotation, 0));
         } else if (rand == 4) {
             pieces.add(new ruinGenerator.Piece(manager, RUIN_5_TEMPLATE, pos, rotation, 5));
         } else if (rand == 5) {
@@ -83,14 +83,14 @@ public class ruinGenerator {
                 BlockEntity blockEntity = world.getBlockEntity(pos.down());
                 if (blockEntity instanceof ChestBlockEntity) {
                     // ((ChestBlockEntity) blockEntity).setLootTable(chestLoot, random.nextLong());
-                    ((ChestBlockEntity) blockEntity).setLootTable(LootTables.ABANDONED_MINESHAFT_CHEST, random.nextLong());
+                    ((ChestBlockEntity) blockEntity).setLootTable(LootTables.SIMPLE_DUNGEON_CHEST, random.nextLong());
 
                 }
             }
         }
 
         public boolean generate(IWorld world, ChunkGenerator<?> generator, Random random, BlockBox box, ChunkPos pos) {
-            int yHeight = world.getTopY(Heightmap.Type.WORLD_SURFACE_WG, this.pos.getX() + 8, this.pos.getZ() + 8);
+            int yHeight = world.getTopY(Heightmap.Type.WORLD_SURFACE_WG, this.pos.getX(), this.pos.getZ());
             BlockPos blockPos3 = this.pos;
             this.pos = this.pos.add(0, yHeight, 0); //Spawns in corner - Should probably change but works for now lol
             boolean bl = super.generate(world, generator, random, box, pos);
