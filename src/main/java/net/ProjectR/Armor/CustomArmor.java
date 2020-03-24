@@ -37,13 +37,7 @@ public enum CustomArmor implements ArmorMaterial {
     DARK_OAK_WOOD("dark_oak_wood", 10, new int[]{1, 4, 5, 2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.0F, 0.0f, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.DARK_OAK_WOOD});
     }),;
-    
-    // LEATHER("leather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
-    //     return Ingredient.ofItems(Items.LEATHER);
-    //  }),
-    //  CHAIN("chainmail", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> {
-    //     return Ingredient.ofItems(Items.IRON_INGOT);
-    //  }),
+
     private final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;
     private final int durabilityMultiplier;
