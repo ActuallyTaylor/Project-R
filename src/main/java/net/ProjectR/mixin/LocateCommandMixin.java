@@ -25,11 +25,7 @@ public abstract class LocateCommandMixin {
  
     @Inject(method = "register", at = @At(value = "RETURN"))
     private static void onRegister(CommandDispatcher<ServerCommandSource> dispatcher, CallbackInfo info) {
-        dispatcher.register(literal("locate").requires(source -> source.hasPermissionLevel(2)).then(literal("Ruin_1").executes(ctx -> execute(ctx.getSource(), "ruins_1"))));
-        dispatcher.register(literal("locate").requires(source -> source.hasPermissionLevel(2)).then(literal("Ruin_2").executes(ctx -> execute(ctx.getSource(), "ruins_2"))));
-        dispatcher.register(literal("locate").requires(source -> source.hasPermissionLevel(2)).then(literal("Ruin_3").executes(ctx -> execute(ctx.getSource(), "ruins_3"))));
-        dispatcher.register(literal("locate").requires(source -> source.hasPermissionLevel(2)).then(literal("Dungeon_1").executes(ctx -> execute(ctx.getSource(), "dungeon_1"))));
-        dispatcher.register(literal("locate").requires(source -> source.hasPermissionLevel(2)).then(literal("Dungeon_2").executes(ctx -> execute(ctx.getSource(), "dungeon_2"))));
+        dispatcher.register(literal("locate").requires(source -> source.hasPermissionLevel(2)).then(literal("Ruins_1").executes(ctx -> execute(ctx.getSource(), "Ruin"))));
 
     }
 }
