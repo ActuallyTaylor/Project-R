@@ -36,7 +36,7 @@ public enum CustomArmor implements ArmorMaterial {
     }),
     DARK_OAK_WOOD("dark_oak_wood", 10, new int[]{1, 4, 5, 2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.0F, 0.0f, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.DARK_OAK_WOOD});
-    }),;
+    });
 
     private final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;
@@ -57,7 +57,7 @@ public enum CustomArmor implements ArmorMaterial {
         this.enchantability = enchant;
         this.equipSound = soundEvent_1;
         this.toughness = tough;
-        this.repairIngredientSupplier = new Lazy(supplier_1);
+        this.repairIngredientSupplier = new Lazy<Ingredient>(supplier_1);
         this.knockbackRes = knockback;
     }
 
