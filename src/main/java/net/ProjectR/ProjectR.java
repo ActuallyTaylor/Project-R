@@ -28,11 +28,12 @@ public class ProjectR implements ModInitializer {
         
         //Load Loot Tables
         NetherMobs.insertLootTable();
-        
+
         //Load Structures
         StructureReg.register();
 
         //Load Biomes
         BiomeReg.register();
-    }
+
+      }
 }

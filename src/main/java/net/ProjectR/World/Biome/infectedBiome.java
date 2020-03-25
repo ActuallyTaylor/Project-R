@@ -1,6 +1,8 @@
 package net.ProjectR.World.Biome;
 
 import com.google.common.collect.ImmutableList;
+
+import net.ProjectR.Registration.StructureReg;
 import net.minecraft.entity.EntityCategory;
 import net.minecraft.entity.EntityType;
 import net.minecraft.sound.SoundEvents;
@@ -16,22 +18,26 @@ import net.minecraft.world.gen.surfacebuilder.SurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilder.TernarySurfaceConfig;
 import net.minecraft.world.gen.feature.MineshaftFeature;
 import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.decorator.ChanceDecoratorConfig;
 import net.minecraft.world.gen.decorator.CountExtraChanceDecoratorConfig;
 import net.minecraft.world.gen.decorator.Decorator;
 
 public class infectedBiome extends Biome {
-    
-    public static final TernarySurfaceConfig SURFACE_CONFIG = new TernarySurfaceConfig(SurfaceBuilder.CRIMSON_NYLIUM, SurfaceBuilder.WARPED_NYLIUM, SurfaceBuilder.NETHERRACK);
 
-    public static final Settings BIOME_SETTINGS = new Biome.Settings().configureSurfaceBuilder(SurfaceBuilder.DEFAULT,SURFACE_CONFIG).precipitation(Biome.Precipitation.NONE).category(Biome.Category.MUSHROOM).depth(0.24F).scale(0.2F).temperature(0.6F).downfall(0.2F).effects((new BiomeEffects.Builder()).waterColor(6388580).waterFogColor(2302743).fogColor(1705242).moodSound(SoundEvents.AMBIENT_CRIMSON_FOREST_MOOD).build()).parent((String)null).noises(ImmutableList.of(new Biome.MixedNoisePoint(-0.25f, -0.5f, 0.5f, 0.2F, 1.0F)));
+    public static final TernarySurfaceConfig SURFACE_CONFIG = new TernarySurfaceConfig(SurfaceBuilder.CRIMSON_NYLIUM,
+            SurfaceBuilder.WARPED_NYLIUM, SurfaceBuilder.NETHERRACK);
 
-    public infectedBiome()
-    {
+    public static final Settings BIOME_SETTINGS = new Biome.Settings().configureSurfaceBuilder(SurfaceBuilder.DEFAULT, SURFACE_CONFIG).precipitation(Biome.Precipitation.NONE).category(Biome.Category.NONE).depth(0.24F).scale(0.2F).temperature(0.6F).downfall(0.2F).effects((new BiomeEffects.Builder()).waterColor(6388580).waterFogColor(2302743).fogColor(1705242).moodSound(SoundEvents.AMBIENT_CRIMSON_FOREST_MOOD).build()).parent((String) null).noises(ImmutableList.of(new Biome.MixedNoisePoint(-0.25f, -0.5f, 0.5f, 0.2F, 1.0F)));
+
+    public infectedBiome() {
         super(BIOME_SETTINGS);
-        this.addStructureFeature(Feature.MINESHAFT.configure(new MineshaftFeatureConfig(0.004D, MineshaftFeature.Type.NORMAL)));
+        this.addStructureFeature(
+                Feature.MINESHAFT.configure(new MineshaftFeatureConfig(0.004D, MineshaftFeature.Type.NORMAL)));
         this.addStructureFeature(Feature.VILLAGE.configure(new VillageFeatureConfig("village/plains/town_centers", 6)));
         this.addStructureFeature(Feature.STRONGHOLD.configure(FeatureConfig.DEFAULT));
-
+        this.addStructureFeature(StructureReg.townFeature.configure(FeatureConfig.DEFAULT));
+        this.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES,StructureReg.townFeature.configure(FeatureConfig.DEFAULT).createDecoratedFeature(Decorator.CHANCE_PASSTHROUGH.configure(new ChanceDecoratorConfig(15))));
+        
         DefaultBiomeFeatures.addLandCarvers(this);
         DefaultBiomeFeatures.addDefaultStructures(this);
         DefaultBiomeFeatures.addDungeons(this);
