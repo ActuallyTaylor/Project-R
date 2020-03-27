@@ -88,11 +88,12 @@ public class ruinGenerator {
             }
         }
 
-        public boolean generate(IWorld world, ChunkGenerator<?> generator, Random random, BlockBox box, ChunkPos pos) {
+        @Override
+        public boolean generate(IWorld world, ChunkGenerator<?> generator, Random random, BlockBox box, ChunkPos pos,BlockPos pos3) {
             int yHeight = world.getTopY(Heightmap.Type.WORLD_SURFACE_WG, this.pos.getX(), this.pos.getZ());
             BlockPos blockPos3 = this.pos;
             this.pos = this.pos.add(0, yHeight, 0); //Spawns in corner - Should probably change but works for now lol
-            boolean bl = super.generate(world, generator, random, box, pos);
+            boolean bl = super.generate(world, generator, random, box, pos, blockPos3);
 
             this.pos = blockPos3;
             return bl;
