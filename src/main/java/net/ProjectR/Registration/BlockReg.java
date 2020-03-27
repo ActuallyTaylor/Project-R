@@ -17,7 +17,7 @@ public class BlockReg {
     }));
 
     public static void register() {
-        Registry.register(Registry.ITEM, new Identifier("projectr", "blueshroomlight"), new BlockItem(BLUESHROOMLIGHT, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("projectr", "blueshroomlight"), new BlockItem(BLUESHROOMLIGHT, new Item.Settings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.BLOCK, new Identifier("projectr", "blueshroomlight"), BLUESHROOMLIGHT);
     }
 }
