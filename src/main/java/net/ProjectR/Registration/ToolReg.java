@@ -25,6 +25,13 @@ public class ToolReg {
     public static final Item MAGMA_AXE = new AxeBase(CustomTool.MAGMA, 6, -3.1f);
     public static final Item MAGMA_HOE = new HoeBase(CustomTool.MAGMA, -2, -1f);
     
+    //Crying Obsidian
+    public static final Item CRYING_OBSIDIAN_PICKAXE = new PickaxeBase(CustomTool.CRYING_OBSIDIAN, 1, -2.8f);
+    public static final Item CRYING_OBSIDIAN_SWORD_ITEM = new SwordBase(CustomTool.CRYING_OBSIDIAN, 3, -2.4f);
+    public static final Item CRYING_OBSIDIAN_SHOVEL = new ShovelBase(CustomTool.CRYING_OBSIDIAN, 1.5f, -3.0f);
+    public static final Item CRYING_OBSIDIAN_AXE = new AxeBase(CustomTool.CRYING_OBSIDIAN, 6, -3.1f);
+    public static final Item CRYING_OBSIDIAN_HOE = new HoeBase(CustomTool.CRYING_OBSIDIAN, -2, -1f);
+
     public static void register() {
         // Prismarine
         Registry.register(Registry.ITEM, new Identifier("projectr", "prismarine_pickaxe"), PRISMARINE_PICKAXE);
@@ -39,5 +46,12 @@ public class ToolReg {
         Registry.register(Registry.ITEM, new Identifier("projectr", "magma_shovel"), MAGMA_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier("projectr", "magma_axe"), MAGMA_AXE);
         Registry.register(Registry.ITEM, new Identifier("projectr", "magma_hoe"), MAGMA_HOE);
+
+        //Crying Obsidian
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_pickaxe"), CRYING_OBSIDIAN_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_sword"), CRYING_OBSIDIAN_SWORD_ITEM);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_shovel"), CRYING_OBSIDIAN_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_axe"), CRYING_OBSIDIAN_AXE);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_hoe"), CRYING_OBSIDIAN_HOE);
     }
 }

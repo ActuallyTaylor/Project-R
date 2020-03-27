@@ -9,8 +9,12 @@ public class ItemReg {
     //Magma
     public static final Item MAGMA_SHARD = new Item(new Item.Settings().group(ItemGroup.MISC));
     
+    //Crying Obsidian
+    public static final Item CRYING_OBSIDIAN_SHARD = new Item(new Item.Settings().group(ItemGroup.MISC));
+
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier("projectr", "magma_shard"), MAGMA_SHARD);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_shard"), CRYING_OBSIDIAN_SHARD);
 
     }
 }
