@@ -17,7 +17,7 @@ public class experienceHook {
     @Inject(at = @At("HEAD"), method = "addExperience(I)V")
 	private void addExperienceHead(int experience, CallbackInfo info) {
 		//final PlayerEntity player = ((PlayerEntity) (Object) this);
-		//addXP(experience);
+		addXP(experience);
 		
 	}
 

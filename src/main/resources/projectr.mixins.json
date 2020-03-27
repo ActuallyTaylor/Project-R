@@ -8,7 +8,8 @@
   "client": [
     "ExampleMixin",
     "TickHook",
-    "experienceHook"
+    "experienceHook",
+    "shroomHook"
   ],
   "injectors": {
     "defaultRequire": 1
