@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "O"
+    ],
+    "key": {
+      "O": {
+        "item": "minecraft:crying_obsidian"
+      }
+    },
+    "result": {
+      "item": "projectr:crying_obsidian_shard",
+      "count": 9
+    }
+  }
+

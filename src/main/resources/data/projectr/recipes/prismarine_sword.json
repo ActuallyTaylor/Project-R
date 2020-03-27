@@ -1,20 +1,20 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-      " M ",
-      " S ",
+      " P ",
+      " P ",
       " S "
     ],
     "key": {
-      "M": {
-        "item": "projectr:magma_shard"
+      "P": {
+        "item": "minecraft:prismarine_shard"
       },
       "S": {
         "item": "minecraft:stick"
       }
     },
     "result": {
-      "item": "projectr:magma_shovel",
+      "item": "projectr:prismarine_sword",
       "count": 1
     }
   }

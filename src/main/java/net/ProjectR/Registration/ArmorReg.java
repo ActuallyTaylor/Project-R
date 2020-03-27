@@ -57,6 +57,12 @@ public class ArmorReg {
     public static final Item DARK_OAK_WOOD_LEGGINGS = new ArmorItem(CustomArmor.DARK_OAK_WOOD, EquipmentSlot.LEGS, (new Item.Settings().group(ItemGroup.COMBAT)));
     public static final Item DARK_OAK_WOOD_BOOTS = new ArmorItem(CustomArmor.DARK_OAK_WOOD, EquipmentSlot.FEET, (new Item.Settings().group(ItemGroup.COMBAT)));
     
+    //Crying Obsidian
+    public static final Item CRYING_OBSIDIAN_HELMET = new ArmorItem(CustomArmor.CRYING_OBSIDIAN, EquipmentSlot.HEAD, (new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item CRYING_OBSIDIAN_CHESTPLATE = new ArmorItem(CustomArmor.CRYING_OBSIDIAN, EquipmentSlot.CHEST, (new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item CRYING_OBSIDIAN_LEGGINGS = new ArmorItem(CustomArmor.CRYING_OBSIDIAN, EquipmentSlot.LEGS, (new Item.Settings().group(ItemGroup.COMBAT)));
+    public static final Item CRYING_OBSIDIAN_BOOTS = new ArmorItem(CustomArmor.CRYING_OBSIDIAN, EquipmentSlot.FEET, (new Item.Settings().group(ItemGroup.COMBAT)));
+    
     public static void register() {
         //Prismarine
         Registry.register(Registry.ITEM, new Identifier("projectr", "prismarine_helmet"), PRISMARINE_HELMET);
@@ -105,5 +111,11 @@ public class ArmorReg {
         Registry.register(Registry.ITEM, new Identifier("projectr", "dark_oak_chestplate"), DARK_OAK_WOOD_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier("projectr", "dark_oak_leggings"), DARK_OAK_WOOD_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier("projectr", "dark_oak_boots"), DARK_OAK_WOOD_BOOTS);   
+
+        //Crying Obsidian
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_helmet"), CRYING_OBSIDIAN_HELMET);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_chestplate"), CRYING_OBSIDIAN_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_leggings"), CRYING_OBSIDIAN_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier("projectr", "crying_obsidian_boots"), CRYING_OBSIDIAN_BOOTS);   
     }
 }

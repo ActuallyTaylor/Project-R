@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
       " M ",
-      " S ",
+      " M ",
       " S "
     ],
     "key": {
@@ -14,7 +14,7 @@
       }
     },
     "result": {
-      "item": "projectr:magma_shovel",
+      "item": "projectr:magma_sword",
       "count": 1
     }
   }

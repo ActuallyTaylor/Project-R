@@ -50,6 +50,19 @@
     "item.projectr.jungle_leggings": "Jungle Leggings",
     "item.projectr.jungle_boots": "Jungle Boots",
     
+    "item.projectr.crying_obsidian_helmet": "Crying Obsidian Helmet",
+    "item.projectr.crying_obsidian_chestplate": "Crying Obsidian Chestplate",
+    "item.projectr.crying_obsidian_leggings": "Crying Obsidian Leggings",
+    "item.projectr.crying_obsidian_boots": "Crying Obsidian Boots",
+    "item.projectr.crying_obsidian_sword": "Crying Obsidian Sword",
+    "item.projectr.crying_obsidian_pickaxe": "Crying Obsidian Pickaxe",
+    "item.projectr.crying_obsidian_axe": "Crying Obsidian Axe",
+    "item.projectr.crying_obsidian_shovel": "Crying Obsidian Shovel",
+    "item.projectr.crying_obsidian_hoe": "Crying Obsidian Hoe",
+    "item.projectr.crying_obsidian_shard": "Crying Obsidian Shard",
+
+    "block.projectr.blueshroomlight": "Soul Shroomlight",
+
     "biome.projectr.infected_biome": "Infected"
   }
 

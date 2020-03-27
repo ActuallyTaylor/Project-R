@@ -1,20 +1,20 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-      " M ",
-      " S ",
+      "CC ",
+      "CS ",
       " S "
     ],
     "key": {
-      "M": {
-        "item": "projectr:magma_shard"
+      "C": {
+        "item": "projectr:crying_obsidian_shard"
       },
       "S": {
         "item": "minecraft:stick"
       }
     },
     "result": {
-      "item": "projectr:magma_shovel",
+      "item": "projectr:crying_obsidian_axe",
       "count": 1
     }
   }

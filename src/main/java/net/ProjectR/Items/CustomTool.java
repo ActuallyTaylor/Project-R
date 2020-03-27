@@ -12,10 +12,13 @@ public enum CustomTool implements ToolMaterial {
     PRISMARINE(3, 1650, 9.0F, 3.0F, 22, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.PRISMARINE_SHARD});
     }),
-    MAGMA(3, 1600, 9.0F, 3.0F, 22, () -> {
+    MAGMA(3, 1650, 9.0F, 3.0F, 22, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.MAGMA_BLOCK});
+    }),
+    CRYING_OBSIDIAN(3, 1750, 9.0F, 3.0F, 24, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.CRYING_OBSIDIAN});
     });
-  
+
     private final int durabilty;
     private final float attackDamage;
     private final int miningLevel;
