@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " C ",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "C": {
+        "item": "projectr:crying_obsidian_shard"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "projectr:crying_obsidian_shovel",
+      "count": 1
+    }
+  }
+

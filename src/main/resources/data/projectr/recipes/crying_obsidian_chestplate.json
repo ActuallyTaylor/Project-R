@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "S S",
+      "SSS",
+      "SSS"
+    ],
+    "key": {
+      "S": {
+        "item": "projectr:crying_obsidian_shard"
+      }
+    },
+    "result": {
+      "item": "projectr:crying_obsidian_chestplate",
+      "count": 1
+    }
+  }
