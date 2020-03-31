@@ -63,6 +63,12 @@
 
     "block.projectr.blueshroomlight": "Soul Shroomlight",
 
-    "biome.projectr.infected_biome": "Infected"
-  }
+    "gui.projectr.fightButton": "Level up Fighting",
+    "gui.projectr.miningButton": "Level up Mining",
+    "gui.projectr.explorationButton": "Level up Exploration",
+    "gui.projectr.craftingButton": "Level up Crafting",
+    "gui.projectr.smithingButton": "Level up Smithing",
+    "gui.projectr.farmingButton": "Level up Farming",
+    "gui.projectr.tradingButton": "Level up Trading"
+}
 

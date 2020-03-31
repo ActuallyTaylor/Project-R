@@ -1,9 +1,7 @@
 package net.ProjectR.Items;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.AxeItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
+
 
 public class AxeBase extends AxeItem {
     public AxeBase(ToolMaterial toolMaterial_1, int attackDamage, float attackSpeed) {
