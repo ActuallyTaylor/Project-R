@@ -61,7 +61,7 @@ public class townFeature extends AbstractTempleFeature<DefaultFeatureConfig> {
             final int x2 = x * 16;
             final int z2 = z * 16;
             final BlockPos startingPos = new BlockPos(x2, 0, z2);
-            final BlockRotation rotation = BlockRotation.values()[this.random.nextInt(BlockRotation.values().length)];
+            final BlockRotation rotation = BlockRotation.NONE;//BlockRotation.values()[this.random.nextInt(BlockRotation.values().length)];
             townGenerator.addP(structureManager, startingPos, rotation, this.children,this.random,defaultFeatureConfig);
             this.setBoundingBoxFromChildren();
         }

@@ -30,5 +30,9 @@ public class TickHook {
       if (helmet.getItem() == ArmorReg.MAGMA_HELMET && chestplate.getItem() == ArmorReg.MAGMA_CHESTPLATE && leggings.getItem() == ArmorReg.MAGMA_LEGGINGS && boots.getItem() == ArmorReg.MAGMA_BOOTS) {
         player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,10, 0, false, false, true));
       }
+
+      if (helmet.getItem() == ArmorReg.CRYING_OBSIDIAN_HELMET && chestplate.getItem() == ArmorReg.CRYING_OBSIDIAN_CHESTPLATE && leggings.getItem() == ArmorReg.CRYING_OBSIDIAN_LEGGINGS && boots.getItem() == ArmorReg.CRYING_OBSIDIAN_BOOTS) {
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,10, 0, false, false, true));
+      }
     }
 }

@@ -59,7 +59,7 @@ public class ruinFeature extends AbstractTempleFeature<DefaultFeatureConfig> {
             final int x2 = x * 16;
             final int z2 = z * 16;
             final BlockPos startingPos = new BlockPos(x2, 0, z2);
-            final BlockRotation rotation = BlockRotation.values()[this.random.nextInt(BlockRotation.values().length)];
+            final BlockRotation rotation = BlockRotation.NONE;
             ruinGenerator.addParts(structureManager, startingPos, rotation, this.children, this.random,
                     defaultFeatureConfig);
             this.setBoundingBoxFromChildren();

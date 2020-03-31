@@ -5,7 +5,7 @@ import com.google.common.collect.ImmutableList;
 import net.ProjectR.Registration.StructureReg;
 import net.minecraft.entity.EntityCategory;
 import net.minecraft.entity.EntityType;
-import net.minecraft.sound.SoundEvents;
+import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -27,8 +27,8 @@ public class infectedBiome extends Biome {
     public static final TernarySurfaceConfig SURFACE_CONFIG = new TernarySurfaceConfig(SurfaceBuilder.CRIMSON_NYLIUM,
             SurfaceBuilder.WARPED_NYLIUM, SurfaceBuilder.NETHERRACK);
 
-    public static final Settings BIOME_SETTINGS = new Biome.Settings().configureSurfaceBuilder(SurfaceBuilder.DEFAULT, SURFACE_CONFIG).precipitation(Biome.Precipitation.NONE).category(Biome.Category.NONE).depth(0.24F).scale(0.2F).temperature(0.6F).downfall(0.2F).effects((new BiomeEffects.Builder()).waterColor(6388580).waterFogColor(2302743).fogColor(1705242).moodSound(SoundEvents.AMBIENT_CRIMSON_FOREST_MOOD).build()).parent((String) null).noises(ImmutableList.of(new Biome.MixedNoisePoint(-0.25f, -0.5f, 0.5f, 0.2F, 1.0F)));
-
+    public static final Settings BIOME_SETTINGS = new Biome.Settings().configureSurfaceBuilder(SurfaceBuilder.DEFAULT, SURFACE_CONFIG).precipitation(Biome.Precipitation.NONE).category(Biome.Category.NONE).depth(0.24F).scale(0.2F).temperature(0.6F).downfall(0.2F).effects((new BiomeEffects.Builder()).waterColor(6388580).waterFogColor(2302743).fogColor(1705242).moodSound(BiomeMoodSound.CAVE).build()).parent((String) null).noises(ImmutableList.of(new Biome.MixedNoisePoint(-0.25f, -0.5f, 0.5f, 0.2F, 1.0F)));
+    
     public infectedBiome() {
         super(BIOME_SETTINGS);
         this.addStructureFeature(
