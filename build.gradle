@@ -27,6 +27,7 @@ dependencies {
 
 	//LibGUI
 	modImplementation "io.github.cottonmc:LibGui:${project.libgui_version}"
+    implementation 'org.jetbrains:annotations:15.0'
 }
 
 processResources {

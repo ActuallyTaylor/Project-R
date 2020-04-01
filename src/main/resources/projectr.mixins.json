@@ -9,7 +9,8 @@
     "ExampleMixin",
     "TickHook",
     "playerHook",
-    "shroomHook"
+    "shroomHook",
+    "HudHook"
   ],
   "injectors": {
     "defaultRequire": 1
